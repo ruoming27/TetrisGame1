@@ -1,54 +1,89 @@
+# 🎮 Tetris Game Collection
 
-# Tetris Game 🎮
+[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue)](https://www.python.org/)
+[![Pygame](https://img.shields.io/badge/pygame-2.0%2B-green)](https://www.pygame.org/)
+[![JavaScript](https://img.shields.io/badge/javascript-ES6%2B-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License: MIT](https://img.shields.io/badge/license-MIT-purple)](LICENSE)
 
-A classic Tetris game implemented in JavaScript and rendered on HTML5 Canvas.
+<div align="center">
+  <img src="screenshot.png" alt="Tetris Game Screenshot" width="600">
+</div>
 
----
+## 🚀 Features
 
-## Demo
+| Feature              | Python | Web |
+|----------------------|--------|-----|
+| Classic Gameplay     | ✅     | ✅  |
+| Ghost Piece          | ✅     | ✅  |
+| 7-Bag Randomizer     | ✅     | ✅  |
+| Score System         | ✅     | ✅  |
+| Next Piece Preview   | ✅     | ✅  |
+| Pause/Restart        | ✅     | ✅  |
 
-Play the game live here:  
-[https://ruoming27.github.io/tetrisgame/](https://ruoming27.github.io/tetrisgame/)
-
----
-
-## Features
-
-- Classic Tetris gameplay with 7 Tetromino shapes (I, L, J, O, T, S, Z)
-- Smooth piece movement and rotation
-- Line clearing when a row is full
-- Collision detection with arena boundaries and stacked pieces
-- Basic wall kick logic for rotations near edges
-- Keyboard controls for moving and rotating pieces
-- Scalable canvas rendering with simple CSS styling
-
----
-
-## Controls
-
-| Key          | Action           |
-|--------------|------------------|
-| Left Arrow   | Move piece left  |
-| Right Arrow  | Move piece right |
-| Down Arrow   | Soft drop        |
-| Q            | Rotate piece CCW |
-| W            | Rotate piece CW  |
-
----
-
-## How to Run Locally
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/ruoming27/tetrisgame.github.io.git
-    ```
-2. Open `index.html` in your web browser.
-
----
-
-## Project Structure
-tetrisgame.github.io/\
-├── index.html # Main HTML file with canvas\
-├── style.css # CSS styles for centering and styling\
-├── tetris.js # JavaScript game logic\
+## 📁 Project Structure
+tetris/
+├── tetris.py # Python implementation (Pygame)
+├── web/ # Web version
+│ ├── index.html # HTML structure
+│ └── tetris.js # Game logic
+├── assets/ # (Optional) Game assets
 └── README.md # This file
+
+
+## 🖥️ Python Version
+
+### Requirements
+```bash
+pip install pygame
+
+### Run
+python tetris.py
+
+Controls
+Key	Action
+← →	Move left/right
+↓	Soft drop
+↑ or X	Rotate clockwise
+Z	Rotate counter-clockwise
+Space	Hard drop
+P	Pause/resume
+R	Restart
+Q or ESC	Quit
+
+🌐 Web Version
+Run
+Simply open web/index.html in any modern browser
+
+Additional Features
+Responsive design
+
+Mobile-friendly controls
+
+🎯 How to Play
+Stack blocks to complete lines
+
+Each line clear increases your score
+
+Game speeds up as you level up
+
+Try to survive as long as possible!
+
+📊 Scoring
+Lines Cleared	Points (× level)
+1	100
+2	300
+3	500
+4 (Tetris)	800
+
+🛠️ Development
+# For Python version testing
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+
+🤝 Contributing
+Pull requests welcome! For major changes, please open an issue first.
+
+📜 License
+MIT
