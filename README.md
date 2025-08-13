@@ -8,7 +8,7 @@ A classic Tetris game implemented in JavaScript and rendered on HTML5 Canvas.
 ## Demo
 
 Play the game live here:  
-[https://ruoming27.github.io/tetrisgame.github.io/](https://ruoming27.github.io/tetrisgame.github.io/)
+[https://ruoming27.github.io/tetrisgame/](https://ruoming27.github.io/tetrisgame/)
 
 ---
 
